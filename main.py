@@ -48,8 +48,9 @@ class ProgramRunner:
 
     def run_1_task(self):
         T1 = self.loader.loaded_modules["T1"]
+        rls = input("Ввод пользователей: ").split()
         task = T1()
-        self.results['1'] = task.run()
+        self.results['1'] = task.run(rls)
 
     def run_2_task(self):
         T2 = self.loader.loaded_modules["T2"]
